@@ -7,6 +7,8 @@ public class Krug extends Oblik{
 	public Krug() {}
 	
 	public Krug(String boja,double poluprecnik) {
+		//Tip i broj strana sam direktno prosledio konstruktoru nadklase
+		//posto nema potrebe da se unosi pri kreiranju objekta
 		super(boja,"Krug",0);
 		setPoluprecnik(poluprecnik);
 	}

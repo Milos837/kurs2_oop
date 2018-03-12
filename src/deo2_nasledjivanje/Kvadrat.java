@@ -7,7 +7,9 @@ public class Kvadrat extends Oblik{
 	public Kvadrat() {}
 	
 	public Kvadrat(String boja,double duzinaStranice) {
-		super(boja,"Kvadrat",4);
+		//Tip i broj strana sam direktno prosledio konstruktoru nadklase
+		//posto nema potrebe da se unosi pri kreiranju objekta
+		super(boja,"Kvadrat",4);			
 		setDuzinaStranice(duzinaStranice);
 	}
 
