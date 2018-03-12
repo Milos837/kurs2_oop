@@ -41,6 +41,21 @@ public class Main {
 		a1.stampajPodatke();
 		*/
 		
+		Kvadrat k1 = new Kvadrat("bela",4);
+		
+		k1.stampajPodatke();
+		
+		k1.racunajPovrsinu();
+		
+		k1.stampajPodatke();
+		
+		Krug k2 = new Krug("crvena",20);
+		
+		k2.stampajPodatke();
+		
+		k2.racunajPovrsinu();
+		
+		k2.stampajPodatke();
 		
 	}
 
