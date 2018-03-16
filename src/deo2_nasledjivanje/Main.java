@@ -13,8 +13,8 @@ public class Main {
 		s1.stampajPoene();
 		*/
 		/*
-		Klijent k1 = new Klijent("Milos","Tepic",26,"Ulica","019230913",821309);
-		Klijent k2 = new Klijent("Bojan","Tepic",23,"Ulica","245330913",821310);
+		Klijent k1 = new Klijent("Pera","Peric",26,"Ulica","019230913",821309);
+		Klijent k2 = new Klijent("Ana","Jovic",23,"Ulica","245330913",821310);
 		
 		k1.setStanjeRacuna(5000);
 		k2.setStanjeRacuna(15000);
@@ -29,8 +29,8 @@ public class Main {
 		*/
 		
 		/*
-		Osoba o1 = new Osoba("Milos","Tepic",26);
-		Osoba o2 = new Osoba("Bojan","Tepic",23);
+		Osoba o1 = new Osoba("Pera","Peric",26);
+		Osoba o2 = new Osoba("Ana","Jovic",23);
 		
 		Automobil a1 = new Automobil("Peugeot","206",2004,"NS-928391",o1,4);
 		
