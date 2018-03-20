@@ -72,6 +72,14 @@ public class Ucionica {
 											,getBrojUcionice(),getSprat(),getBrojMesta(),getBrojRacunara(),isImaProjektor());
 	}
 	
+	public void stampajRacunare() {
+		System.out.println("Ucionici pripadaju sledeci racunari:");
+		for (int i=0; i<getBrojRacunara(); i++) {
+			System.out.printf("%d: ",i+1);
+			this.getR(i).stampajPodatke();
+		}
+	}
+	
 	
 	
 

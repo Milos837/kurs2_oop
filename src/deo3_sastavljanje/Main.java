@@ -28,15 +28,11 @@ public class Main {
 		
 		i1.postaviZaposlenog("Pera", "Peric", 30, "Asistent", 500);
 		i1.postaviZaposlenog("Ana", "Ivanovic", 28, "Profesor", 600);
-		/*
-		i1.getU(0).stampajPodatke();
-		i1.getZ(0).stampajPodatke();
-		i1.stampajPodatke();
-		i1.getU(0).getR(0).stampajPodatke();
-		*/
+		
 		
 		i1.stampajUcionice();
 		i1.stampajZaposlene();
+		i1.getU(0).stampajRacunare();
 	}
 
 }
