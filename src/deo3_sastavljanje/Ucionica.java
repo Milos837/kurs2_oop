@@ -73,7 +73,7 @@ public class Ucionica {
 	}
 	
 	public void stampajRacunare() {
-		System.out.println("Ucionici pripadaju sledeci racunari:");
+		System.out.printf("Ucionici broj %d pripadaju sledeci racunari:\n",getBrojUcionice());
 		for (int i=0; i<getBrojRacunara(); i++) {
 			System.out.printf("%d: ",i+1);
 			this.getR(i).stampajPodatke();

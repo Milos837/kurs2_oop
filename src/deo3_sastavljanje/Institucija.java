@@ -10,8 +10,8 @@ public class Institucija {
 	private int brojZaposlenih;
 	private Ucionica[] u;
 	private Zaposleni[] z;
-	static int counterU = 0;
-	static int counterZ = 0;
+	private int counterU = 0;
+	private int counterZ = 0;
 	
 	public Institucija() {
 		this.u = new Ucionica[20];
@@ -102,7 +102,7 @@ public class Institucija {
 	}
 	
 	public void stampajUcionice() {
-		System.out.println("Instituciji pripadaju sledece ucionice:");
+		System.out.printf("Instituciji %s pripadaju sledece ucionice:\n",getNaziv());
 		for (int i=0; i<getBrojUcionica(); i++) {
 			System.out.printf("%d: ",i+1);
 			this.getU(i).stampajPodatke();
@@ -110,7 +110,7 @@ public class Institucija {
 	}
 	
 	public void stampajZaposlene() {
-		System.out.println("Instituciji pripadaju sledeci zaposleni:");
+		System.out.printf("Instituciji %s pripadaju sledeci zaposleni:\n",getNaziv());
 		for (int i=0; i<getBrojZaposlenih(); i++) {
 			System.out.printf("%d: ",i+1);
 			this.getZ(i).stampajPodatke();
