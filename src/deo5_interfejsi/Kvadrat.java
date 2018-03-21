@@ -1,6 +1,6 @@
-package deo4_polimorfizam;
+package deo5_interfejsi;
 
-public class Kvadrat extends Oblik{
+public class Kvadrat extends Oblik implements Figura{
 	
 	private double duzinaStranice;
 	

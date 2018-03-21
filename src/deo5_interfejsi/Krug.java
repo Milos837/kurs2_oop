@@ -1,6 +1,6 @@
-package deo4_polimorfizam;
+package deo5_interfejsi;
 
-public class Krug extends Oblik{
+public class Krug extends Oblik implements Figura{
 	
 	private double poluprecnik;
 	

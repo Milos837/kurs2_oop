@@ -1,6 +1,6 @@
-package deo4_polimorfizam;
+package deo5_interfejsi;
 
-public abstract class Oblik {
+public abstract class Oblik implements Figura{
 	
 	protected String boja;
 	protected String tip;
@@ -41,9 +41,9 @@ public abstract class Oblik {
 		this.povrsina = povrsina;
 	}
 	
-	public abstract double racunajPovrsinu();
+	//public abstract double racunajPovrsinu();
 	
-	public abstract double racunajObim();
+	//public abstract double racunajObim();
 	
 	public void stampajPodatke() {
 		System.out.printf("Oblik: %s, boja: %s, broj strana: %s",getTip(),getBoja(),getBrojStrana());

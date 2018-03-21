@@ -22,7 +22,7 @@ public class Main {
 		Zena z = new Zena("Ana","Jovic",28,"Peric");
 		z.predstaviSe();
 		*/
-		
+		/*
 		Nastavnik n = new Nastavnik("Pera","Peric",30,"dr", 5, 500);
 		Asistent a = new Asistent("Jova","Jovic", 25, 400,"Pera",3);
 		NenastavniRadnik nr = new NenastavniRadnik("Ana","Ivanovic", 35, 600, "sekretarica", 10);
@@ -33,6 +33,13 @@ public class Main {
 		System.out.println("Plata: " + a.racunajPlatu());
 		nr.predstaviSe();
 		System.out.println("Plata: " + nr.racunajPlatu());
+		*/
+		
+		Kvadrat k1 = new Kvadrat("bela",5);
+		Krug kr1 = new Krug("crvena",6);
+		
+		k1.stampajPodatke();
+		kr1.stampajPodatke();
 		
 		
 		
