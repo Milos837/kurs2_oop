@@ -1,45 +1,48 @@
 package zaposleni;
 
-public abstract class Radnik {
-	
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+
+public abstract class Radnik
+{
 	protected String ime;
 	protected String prezime;
-	protected String JMBG;
-	protected String brojRacuna;
-	protected double koefStrucneSpreme;
-	
-	
-	public String getIme() {
-		return ime;
-	}
-	public void setIme(String ime) {
-		this.ime = ime;
-	}
-	public String getPrezime() {
-		return prezime;
-	}
-	public void setPrezime(String prezime) {
-		this.prezime = prezime;
-	}
-	public String getJMBG() {
-		return JMBG;
-	}
-	public void setJMBG(String jMBG) {
-		JMBG = jMBG;
-	}
-	public String getBrojRacuna() {
-		return brojRacuna;
-	}
-	public void setBrojRacuna(String brojRacuna) {
-		this.brojRacuna = brojRacuna;
-	}
-	public double getKoefStrucneSpreme() {
-		return koefStrucneSpreme;
-	}
-	public void setKoefStrucneSpreme(double koefStrucneSpreme) {
-		this.koefStrucneSpreme = koefStrucneSpreme;
-	}
-	
-	
+	protected String jmbg;
+	protected String tekuciRacun;
+	protected double koefSS;
 
+	public void unosTxt(BufferedReader datoteka)
+	{
+		try{
+			ime = datoteka.readLine();
+			prezime = datoteka.readLine();
+			jmbg = datoteka.readLine();
+			tekuciRacun = datoteka.readLine();
+			koefSS = Double.parseDouble(datoteka.readLine());
+		}
+		catch(IOException e){
+			System.out.println(e.getMessage());
+		}
+	}
+		
+	public void upisTxt(BufferedWriter datoteka, double cenaRada)
+	{
+		try
+		{
+			datoteka.write(ime);
+			datoteka.newLine();
+			datoteka.write(prezime);
+			datoteka.newLine();
+			datoteka.write(tekuciRacun);
+			datoteka.newLine();
+			datoteka.write(new Double(izracunajPlatu(cenaRada)).toString());
+			datoteka.newLine();
+		}
+		catch(IOException e){
+			System.out.println(e.getMessage());
+		}
+	}
+		
+	abstract public double izracunajPlatu(double cenaRada);
 }
