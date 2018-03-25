@@ -9,8 +9,8 @@ public class KvadratnaFunkcija implements Funkcija{
 	private double a;
 	private double b;
 	private double c;
-	private double x1 = 0;
-	private double x2 = 0;
+	private double x1;
+	private double x2;
 
 
 	public void ucitajParametre(BufferedReader parametri) throws IllegalArgumentException{

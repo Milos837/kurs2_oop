@@ -9,7 +9,7 @@ public class LinearnaFunkcija implements Funkcija{
 	
 	private double a;
 	private double b;
-	private double nula = 0;
+	private double nula;
 
 	
 	public void ucitajParametre(BufferedReader parametri) throws IllegalArgumentException{

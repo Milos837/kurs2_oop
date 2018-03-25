@@ -41,7 +41,7 @@ public class Main {
 			f1.ispisiNule(izlaz1);
 			f2.ispisiNule(izlaz2);
 			
-			System.out.println("Program je gotov?");
+			System.out.println("Program je gotov.");
 			
 		}
 		catch(IOException e) {
